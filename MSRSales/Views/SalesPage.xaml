@@ -11,12 +11,31 @@
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
                     <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
                 </ContentView>
+ 
             </StackLayout>
+
+            <StackLayout VerticalOptions="Center" >
+                    
+                <Picker Title="Select Date" x:Name="selectedDate"></Picker>
+                <Picker Title="Select a Location" x:Name="LocationPicker" ItemsSource="{Binding Locations}" ></Picker>
+                <Picker Title="Account" x:Name="AccountPicker"></Picker>
+                <Picker Title="Category" x:Name="CategoryPicker"></Picker>
+                <Picker Title="SKU" x:Name="SKUPicker"   ></Picker>
+
+                    <Button x:Name="locationBYN"></Button>
+
+
+                    
+           </StackLayout>
+                
         </StackLayout>
 
         
         </Grid>
 
-        
+      
+
     </ContentPage.Content>
+
+    
 </ContentPage>
